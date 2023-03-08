@@ -18,10 +18,12 @@
     </TextView>
 
     <ImageView
+        android:id="@+id/imgDescription1"
         app:srcCompat="@drawable/charless_find_computer_1"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:layout_width="300dp"
+        android:alpha="0"
         android:layout_height="300dp">
 
     </ImageView>
