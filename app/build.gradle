@@ -7,6 +7,10 @@ android {
     namespace 'com.example.convertbases'
     compileSdk 32
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.convertbases"
         minSdk 26
