@@ -8,5 +8,9 @@
         <item name="android:windowBackground">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <!-- Customize your theme here. -->
+
+        //font and color surface
+        <item name="fontFamily">@font/vazir_bold</item>
+        <item name="colorSurface">@color/white</item>
     </style>
 </resources>
