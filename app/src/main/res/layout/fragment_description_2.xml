@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp"
         android:text="ورق بزن "
         android:textSize="18sp"
         android:textStyle="bold">

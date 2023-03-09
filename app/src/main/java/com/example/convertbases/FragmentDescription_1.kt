@@ -20,4 +20,11 @@ class FragmentDescription_1 : Fragment() {
         binding = FragmentDescription1Binding.inflate(inflater, container, false)
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //set animation on image view
+        binding.imgDescription1.animate().alpha(1f).duration = 2000
+    }
 }
