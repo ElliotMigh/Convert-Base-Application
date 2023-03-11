@@ -1,17 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <TextView
-        android:text="Fragment Home"
+        android:id="@+id/txtVaqtTabdilKardan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/vazir_bold"
+        android:text="@string/text_fragment_home"
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/etFirstBasis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/et_shape"
+        android:hint="مبنای اول را وارد کنید"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200" />
+
+    <EditText
+        android:id="@+id/etSecondBasis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/et_shape"
+        android:hint="مبنای دوم را وارد کنید"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/et_shape"
+        android:hint="عدد را وارد کنید"
+        android:textSize="18sp"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:background="@drawable/btn_shape"
         android:layout_gravity="center"
-        android:textSize="40sp"
+        android:text="تبدیل کن"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
+        android:layout_height="40dp">
+    </Button>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:lottie_rawRes="@raw/binary_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:text="جواب"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="ذخیره کردن"
+            android:backgroundTint="#00FF0A"
+            android:layout_marginStart="20dp"
+            android:layout_width="150dp"
+            android:background="@drawable/btn_shape"
+            android:layout_height="40dp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="پاک کردن"
+            android:layout_marginStart="50dp"
+            android:backgroundTint="#FF2525"
+            android:layout_width="150dp"
+            android:background="@drawable/btn_shape"
+            android:layout_height="40dp">
+
+        </Button>
+    </LinearLayout>
 
 </LinearLayout>
