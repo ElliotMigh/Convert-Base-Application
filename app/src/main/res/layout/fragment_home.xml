@@ -28,7 +28,6 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/et_shape"
         android:hint="مبنای اول را وارد کنید"
-        android:inputType="number"
         android:padding="10dp"
         android:textSize="18sp"
         android:textAlignment="center"
@@ -44,7 +43,6 @@
         android:background="@drawable/et_shape"
         android:hint="مبنای دوم را وارد کنید"
         android:textSize="18sp"
-        android:inputType="number"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/teal_200">
@@ -61,7 +59,6 @@
         android:background="@drawable/et_shape"
         android:hint="عدد را وارد کنید"
         android:textSize="18sp"
-        android:inputType="number"
         android:padding="10dp"
         android:textAlignment="center"
         android:textColor="@color/teal_200">
