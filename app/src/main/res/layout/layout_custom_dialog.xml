@@ -3,15 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="20dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    app:cardElevation="12dp"
     android:layout_marginHorizontal="20dp">
 
     <LinearLayout
         android:orientation="vertical"
        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <TextView
             android:textSize="18sp"
@@ -28,6 +30,7 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:padding="5dp"
             android:gravity="center"
             android:text="آیا میخوای موارد وارد شده رو پاک کنی؟!"
             android:layout_marginTop="20dp"
@@ -41,7 +44,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/btnYesDelete"

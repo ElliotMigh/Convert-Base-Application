@@ -1,10 +1,16 @@
 package com.example.convertbases
 
+import android.app.Dialog
+import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.convertbases.databinding.FragmentHomeBinding
@@ -73,7 +79,8 @@ class FragmentHome : Fragment() {
 
         //click on delete button (پاک کن)
         binding.btnDelete.setOnClickListener {
-
+            //call show custom dialog box function for delete data from fragment
+            showCustomDialogBox()
         }
     }
 
@@ -82,5 +89,29 @@ class FragmentHome : Fragment() {
         binding.etFirstBasis.text.clear()
         binding.etSecondBasis.text.clear()
         binding.etNumber.text.clear()
+    }
+
+    private fun showCustomDialogBox() {
+        val dialogDelete = Dialog(requireContext())
+        dialogDelete.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialogDelete.setCancelable(false)
+        dialogDelete.setContentView(R.layout.layout_custom_dialog)
+        dialogDelete.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val buttonYes: Button = dialogDelete.findViewById(R.id.btnYesDelete)
+        val buttonDelete: Button = dialogDelete.findViewById(R.id.btnNoDelete)
+
+        //click on yes button
+        buttonYes.setOnClickListener {
+            //call clear edit text function
+            clearEditText()
+            Toast.makeText(context, "موارد وارد شده پاک شد!", Toast.LENGTH_SHORT).show()
+        }
+        //click on no button
+        buttonDelete.setOnClickListener {
+            dialogDelete.dismiss()
+        }
+        //show dialog
+        dialogDelete.show()
     }
 }
