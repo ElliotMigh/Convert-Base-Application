@@ -70,5 +70,17 @@ class FragmentHome : Fragment() {
                 ).show()
             }
         }
+
+        //click on delete button (پاک کن)
+        binding.btnDelete.setOnClickListener {
+
+        }
+    }
+
+    private fun clearEditText() {
+        //Clear edit text
+        binding.etFirstBasis.text.clear()
+        binding.etSecondBasis.text.clear()
+        binding.etNumber.text.clear()
     }
 }
